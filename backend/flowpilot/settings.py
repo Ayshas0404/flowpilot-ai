@@ -121,10 +121,9 @@ SIMPLE_JWT = {
     'ROTATE_REFRESH_TOKENS': True,
 }
 
-# CORS
-CORS_ALLOW_ALL_ORIGINS = True  # Restrict in production
-
-
+CORS_ALLOWED_ORIGINS = [
+    "https://flowpilot-ai-frontend.vercel.app",
+]
 # Internationalization
 LANGUAGE_CODE = 'en-us'
 TIME_ZONE = 'UTC'
